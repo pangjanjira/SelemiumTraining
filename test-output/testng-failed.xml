@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [BlogSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="SafariTest(failed)">
+    <parameter name="browser" value="Opera"/>
+    <parameter name="version" value="85.0"/>
+    <parameter name="platform" value="macOS High Sierra"/>
+    <classes>
+      <class name="testSeleniumLambda.Selenium101LambdaTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testcase3" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testSeleniumLambda.Selenium101LambdaTest -->
+    </classes>
+  </test> <!-- SafariTest(failed) -->
+</suite> <!-- Failed suite [BlogSuite] -->
